@@ -42,12 +42,12 @@ const log = require('./log');
 const { sitemapStructure } = require('./sitemap');
 const csp = require('./csp');
 const sdkUtils = require('./api-util/sdk');
-
+require("dotenv").config()
 const buildPath = path.resolve(__dirname, '..', 'build');
 const env = process.env.REACT_APP_ENV;
 const dev = process.env.REACT_APP_ENV === 'development';
 const PORT = parseInt(process.env.PORT, 10);
-const CLIENT_ID = process.env.REACT_APP_SHARETRIBE_SDK_CLIENT_ID;
+const CLIENT_ID = process.env.REACT_APP_SHARETRIBE_SDK_CLIENT_ID || "0af5ed88-4ae8-4b52-806e-b3c501011ab5";
 const BASE_URL = process.env.REACT_APP_SHARETRIBE_SDK_BASE_URL;
 const ASSET_CDN_BASE_URL = process.env.REACT_APP_SHARETRIBE_SDK_ASSET_CDN_BASE_URL;
 const TRANSIT_VERBOSE = process.env.REACT_APP_SHARETRIBE_SDK_TRANSIT_VERBOSE === 'true';
