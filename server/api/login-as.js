@@ -3,9 +3,9 @@ const https = require('https');
 const sharetribeSdk = require('sharetribe-flex-sdk');
 const Decimal = require('decimal.js');
 const sdkUtils = require('../api-util/sdk');
-
+require("dotenv").config()
 const CLIENT_ID = process.env.REACT_APP_SHARETRIBE_SDK_CLIENT_ID;
-const ROOT_URL = process.env.REACT_APP_CANONICAL_ROOT_URL;
+const ROOT_URL = process.env.REACT_APP_CANONICAL_ROOT_URL || "http://localhost:3000";
 const BASE_URL = process.env.REACT_APP_SHARETRIBE_SDK_BASE_URL;
 const TRANSIT_VERBOSE = process.env.REACT_APP_SHARETRIBE_SDK_TRANSIT_VERBOSE === 'true';
 const USING_SSL = process.env.REACT_APP_SHARETRIBE_USING_SSL === 'true';
