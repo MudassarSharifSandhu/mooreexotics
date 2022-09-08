@@ -6801,10 +6801,17 @@ mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.6"
 
+<<<<<<< HEAD
 moment-timezone@^0.5.34:
   version "0.5.37"
   resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.37.tgz#adf97f719c4e458fdb12e2b4e87b8bec9f4eef1e"
   integrity sha512-uEDzDNFhfaywRl+vwXxffjjq1q0Vzr+fcQpQ1bU0kbzorfS7zVtZnCnGc8mhWmF39d4g4YriF6kwA75mJKE/Zg==
+=======
+moment-timezone@^0.5.35:
+  version "0.5.35"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.35.tgz#6fa2631bdbe8ff04f6b8753f7199516be6dc9839"
+  integrity sha512-cY/pBOEXepQvlgli06ttCTKcIf8cD1nmNwOKQQAdHBqYApQSpAqotBMX0RJZNgMp6i0PlZuf1mFtnlyEkwyvFw==
+>>>>>>> 034fde0b54d9e0deefd469c4b0fa6a8baf501175
   dependencies:
     moment ">= 2.9.0"
 
@@ -8960,10 +8967,10 @@ sharetribe-flex-sdk@^1.17.0:
     lodash "^4.17.10"
     transit-js "^0.8.861"
 
-sharetribe-scripts@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/sharetribe-scripts/-/sharetribe-scripts-6.0.0.tgz#6b8ccb8c4742c0857305556c232af808979f65ee"
-  integrity sha512-y2gjfpco99f6z4JzupAys7KGE2Rd/BVeHP7TyBABrUvt4rmn/8XsB+u3iOVhx1uX/dpD+IWPyQjLrd1FD8iMEw==
+sharetribe-scripts@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/sharetribe-scripts/-/sharetribe-scripts-6.0.1.tgz#0d7b3cc5b9f94945364c391a98e0846a88f89432"
+  integrity sha512-BRCs2PAyy6M4ZS03HEypvkX2r69i+eTnA3PJK1s02448rLtzbkZ7g8z5YRPgwVb8mhFxCKcEaNm1vFfWDd4kOg==
   dependencies:
     "@babel/core" "^7.16.0"
     "@babel/plugin-transform-runtime" "7.12.1"
