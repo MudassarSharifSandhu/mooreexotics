@@ -27,6 +27,6 @@ app.use(cookieParser());
 app.use('/.well-known', wellKnownRouter);
 app.use('/api', apiRouter);
 
-app.listen(PORT, () => {
+app.listen(PORT || 3000, () => {
   console.log(`API server listening on ${PORT}`);
 });
