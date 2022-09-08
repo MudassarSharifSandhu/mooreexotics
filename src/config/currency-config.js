@@ -24,11 +24,11 @@ export const subUnitDivisors = {
 export const currencyConfiguration = currency => {
   if (!subUnitDivisors[currency]) {
     const currencies = Object.keys(subUnitDivisors);
-    throw new Error(
-      `Configuration missing for currency: ${currency}. Supported currencies: ${currencies.join(
-        ', '
-      )}.`
-    );
+    // throw new Error(
+    //   `Configuration missing for currency: ${currency}. Supported currencies: ${currencies.join(
+    //     ', '
+    //   )}.`
+    // );
   }
 
   return subUnitDivisors[currency] === 1
