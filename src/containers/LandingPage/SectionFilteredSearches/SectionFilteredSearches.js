@@ -14,12 +14,13 @@ import css from './SectionFilteredSearches.module.css';
 import imageForFilter1 from './images/imageForFilter1_648x448.jpg';
 import imageForFilter2 from './images/imageForFilter2_648x448.jpg';
 import imageForFilter3 from './images/imageForFilter3_648x448.jpg';
+import af1 from './images/af1.jpg';
 
 // Thumbnail image for the search "card"
 class ThumbnailImage extends Component {
   render() {
     const { alt, ...rest } = this.props;
-    return <img alt={alt} {...rest} />;
+    return <img alt={alt} {...rest} width="30px" />;
   }
 }
 // Load the image only if it's close to viewport (user has scrolled the page enough).
@@ -78,6 +79,11 @@ const SectionFilteredSearches = props => {
         <FilterLink
           name="Converses"
           image={imageForFilter3}
+          link="http://localhost:3000/s?pub_brand=converse"
+        />
+          <FilterLink
+          name="Nikes"
+          image={af1}
           link="http://localhost:3000/s?pub_brand=converse"
         />
       </div>
