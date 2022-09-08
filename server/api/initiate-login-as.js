@@ -1,5 +1,5 @@
 const crypto = require('crypto');
-
+require("dotenv").config()
 const CLIENT_ID = process.env.REACT_APP_SHARETRIBE_SDK_CLIENT_ID;
 const ROOT_URL = process.env.REACT_APP_CANONICAL_ROOT_URL;
 const CONSOLE_URL =
@@ -9,7 +9,7 @@ const USING_SSL = process.env.REACT_APP_SHARETRIBE_USING_SSL === 'true';
 // redirect_uri param used when initiating a login as authentication flow and
 // when requesting a token using an authorization code
 
-const loginAsRedirectUri = ROOT_URL? `${ROOT_URL.replace(/\/$/,'')}/api/login-as`:"";
+const loginAsRedirectUri =`${ROOT_URL.replace(/\/$/,'')}/api/login-as`
 
 // Cookies used for authorization code authentication.
 const stateKey = `st-${CLIENT_ID}-oauth2State`;
